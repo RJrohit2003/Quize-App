@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>Simple Quiz</h1>
+      <div id="rollno-section">
+        <label for="rollno">Enter your Roll No:</label>
+        <input type="text" id="rollno" placeholder="Enter Roll No" />
+        <button id="start-quiz-btn" onclick="startQuiz()">Start Quiz</button>
+      </div>
+
+      <div class="quiz" id="quiz-section" style="display: none">
+        <h2 id="question">Question goes here</h2>
+        <div id="answer-buttons">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+        </div>
+        <button id="next-btn" style="display: none">Next</button>
+      </div>
+
+      <div id="score-section" style="display: none">
+        <h2>Quiz Over! Your score: <span id="score"></span></h2>
+        <p>Roll No: <span id="rollno-display"></span></p>
+      </div>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>
